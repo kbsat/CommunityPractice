@@ -55,7 +55,7 @@ ROOT_URLCONF = 'DjangoCommunity.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['DjangoCommunity/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

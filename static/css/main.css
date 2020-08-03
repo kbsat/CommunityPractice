@@ -1,3 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+
 #main_logo {
-  font-size: 50px;
+  font-size: 30px;
+  font-family: "Lobster", cursive;
+}
+
+#post_title {
+  font-size: 24px;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+#post_content {
+  font-size: 15px;
+  font-family: "Nanum Gothic", sans-serif;
 }
