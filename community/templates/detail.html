@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block contents %}
+<div class="my-3 p-3 bg-white rounded shadow-sm container">
+  <h3 class="border-bottom border-gray pb-2 mb-0" id="post_title">{{post.title}}</h3>
+  
+  <p id="post_content" class="text-break mt-4">{{post.content|linebreaksbr}}</p>
+  <div class="media pt-3">
+    <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+    </div>
+  </div>
+  <small class="d-block text-right mt-3">
+    <a href="{% url 'delete' post.id %}" >삭제</a>
+    <a href="{% url 'main' %}">돌아가기</a>
+  </small>
+</div>
+{% endblock %}

@@ -4,8 +4,8 @@
   {% for post in posts %}
   <div class="media pt-3">
     <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-      <strong class="d-block" id="post_title">{{post.title}}</strong>
-      <div id="post_content">{{post.content}}</div>
+      <a href="{% url 'detail' post.id %}"><strong class="d-block" id="post_title">{{post.title}}</strong></a>
+      <div id="post_content">{{post.summary}}</div>
     </div>
   </div>
   {% endfor %}
