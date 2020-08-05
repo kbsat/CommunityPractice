@@ -1,6 +1,6 @@
 {% extends 'base.html' %} {% block contents %}
 <div class="container">
-  <form action="{% url 'new' %}">
+  <form action="{% url 'update_save' post.id %}">
     <div
       class="d-flex align-items-center p-3 my-3 text-white-50 bg-dark rounded shadow-sm"
     >
@@ -11,8 +11,7 @@
           cols="60"
           rows="1"
           style="resize: none;"
-          
-        ></textarea>
+        >{{post.title}}</textarea>
       </div>
     </div>
 
@@ -26,10 +25,10 @@
             rows="20"
             cols="160"
             style="resize: none;"
-          ></textarea>
+          >{{post.content}}</textarea>
         </div>
       </div>
-      <input type="submit" value="작성" />
+      <input type="submit" value="편집완료" />
     </div>
   </form>
 </div>

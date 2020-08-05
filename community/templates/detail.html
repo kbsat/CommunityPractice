@@ -8,6 +8,7 @@
     </div>
   </div>
   <small class="d-block text-right mt-3">
+    <a href="{% url 'update' post.id %}" >편집</a>
     <a href="{% url 'delete' post.id %}" >삭제</a>
     <a href="{% url 'main' %}">돌아가기</a>
   </small>
